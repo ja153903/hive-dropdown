@@ -1,0 +1,58 @@
+@mixin flexColStart {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start
+}
+
+.dropdown-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown-input {
+  @include flexColStart;
+  border: 2px solid blue;
+  padding: 5px;
+  width: 20%;
+}
+
+.dropdown-options {
+  @include flexColStart;
+  width: 20%;
+  box-shadow: 0 0 1px blue;
+  padding: 10px;
+}
+
+@mixin pointer {
+  cursor: pointer;
+}
+
+.dropdown-option {
+  @include pointer;
+  width: 100%;
+  text-align: left;
+  &:hover {
+    background-color: #add8e6;
+  }
+}
+
+.dropdown-option label {
+  @include pointer;
+}
+
+.dropdown-option input {
+  @include pointer;
+}
+
+.dropdown-label {
+  font-size: 12px;
+  font-style: italic;
+}
+
+.dropdown-input-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
