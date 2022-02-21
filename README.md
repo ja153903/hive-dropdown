@@ -1,4 +1,4 @@
-# Hive Frontend Engineer Assignment
+# Hive Dropdown
 
 ## How to run?
 
